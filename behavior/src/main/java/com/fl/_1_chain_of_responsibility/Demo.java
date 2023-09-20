@@ -1,10 +1,10 @@
-package com.fl.chain_of_responsibility;
+package com.fl._1_chain_of_responsibility;
 
-import com.fl.chain_of_responsibility.middleware.Middleware;
-import com.fl.chain_of_responsibility.middleware.RoleCheckMiddleware;
-import com.fl.chain_of_responsibility.middleware.ThrottlingMiddleware;
-import com.fl.chain_of_responsibility.middleware.UserExistsMiddleware;
-import com.fl.chain_of_responsibility.server.Server;
+import com.fl._1_chain_of_responsibility.middleware.Middleware;
+import com.fl._1_chain_of_responsibility.middleware.RoleCheckMiddleware;
+import com.fl._1_chain_of_responsibility.middleware.ThrottlingMiddleware;
+import com.fl._1_chain_of_responsibility.middleware.UserExistsMiddleware;
+import com.fl._1_chain_of_responsibility.server.Server;
 
 import java.io.BufferedReader;
 import java.io.IOException;

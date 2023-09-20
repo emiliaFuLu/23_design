@@ -1,7 +1,7 @@
-package com.fl.chain_of_responsibility.middleware;
+package com.fl._1_chain_of_responsibility.middleware;
 
 
-import com.fl.chain_of_responsibility.server.Server;
+import com.fl._1_chain_of_responsibility.server.Server;
 
 /**
  * 用户检查

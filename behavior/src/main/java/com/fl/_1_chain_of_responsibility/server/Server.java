@@ -1,6 +1,6 @@
-package com.fl.chain_of_responsibility.server;
+package com.fl._1_chain_of_responsibility.server;
 
-import com.fl.chain_of_responsibility.middleware.Middleware;
+import com.fl._1_chain_of_responsibility.middleware.Middleware;
 
 import java.util.HashMap;
 import java.util.Map;
