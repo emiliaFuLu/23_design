@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
  * @since 2023/9/20 16:30
  */
 public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     private static Server server;
 
     private static void init() {
@@ -47,7 +47,7 @@ public class Demo {
             System.out.print("Input password: ");
             String password = reader.readLine();
             success = server.logIn(email, password);
-        } while (!success);
+        } while (!success && !Thread.currentThread().isInterrupted());
     }
 }
  

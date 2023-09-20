@@ -7,7 +7,7 @@ package com.fl.chain_of_responsibility.middleware;
  * @since 2023/9/20 16:21
  */
 public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
+    private final int requestPerMinute;
     private int request;
     private long currentTime;
 
@@ -34,7 +34,7 @@ public class ThrottlingMiddleware extends Middleware {
 
         if (request > requestPerMinute) {
             System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
+            Thread.currentThread().interrupt();
         }
         return checkNext(email, password);
     }

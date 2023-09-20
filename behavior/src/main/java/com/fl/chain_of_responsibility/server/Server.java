@@ -12,7 +12,7 @@ import java.util.Map;
  * @since 2023/9/20 16:28
  */
 public class Server {
-    private Map<String, String> users = new HashMap<>();
+    private final Map<String, String> users = new HashMap<>();
     private Middleware middleware;
 
     /**
